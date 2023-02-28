@@ -1,0 +1,24 @@
+
+***********************************
+Notas para el profesor
+***********************************
+El proyecto intenta comprender la mayor parte de los temas vistos en las clases. 
+
+La intención es que las vistas sean adecuadas en cualquier dispositivo sea un móvil o una pantalla de mayor tamaño,
+también cuenta con información OG, semántica HTML, barra de navegación, footer con autoría, hypervínculo a google maps en la ubicación, validación 
+y restricción en el input de los campos del formulario de contacto con boxes animados para darle mejor visualización, cuenta también, 
+con otra animación en las barras de "habilidades". El proyecto también utiliza iconos importados de awesome-fonts, fuente personalizada y 
+la posibilidad de visualizar el contenido en dos idiomas. Finalmente las vistas deberían ajustarse correctamente, modificando tamaño de fuentes, 
+márgenes e incluso quitando elementos decorativosque puedan molestar en un tamaño reducido. 
+
+Quedo pendiente por falta de tiempo implementar un script que pueda enviar de forma efectiva los datos por email,
+lo tenía bastante avanzado, pero por falta de tiempo y a fin de no tener problemas en la entrega decidí excluir esta característica junto a otra
+para geolocalizar y elegir el idioma en base a la ubicación del lector.
+
+Respecto a la escritura del código fuente, se pretendió siempre mantener un formato ordenado, dar roles a algunos tag y
+comentar las porciones de código que se consideraron pertinentes para facilitar la visualización y la edición.
+
+Desde ya, se agradece su tiempo y devolución con la intención de seguir creciendo. 
+
+Saludos atte.
+	Leandro E Vitale - leitopzz37@gmail.com

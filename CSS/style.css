@@ -1,0 +1,564 @@
+/* Guardamos los colores que vamos a usar, falicita modificaciones futuras */
+
+:root {
+  --cgrey: rgb( 77, 77, 80); 
+  --clgrey: rgb(151, 153, 156);
+  --cclgrey: rgb(191, 193, 196);
+  --cblue: rgb(59, 115, 187);
+  --clblue: rgb(111, 187, 238); 
+  --cwhite: #f2f2f2;
+  --topnavglow: var(--cwhite);
+}
+
+::marker{
+  color: var(--cblue);
+}
+
+
+body{ 
+  background-image: url('../IMG/background.jpg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/************************Estilo para el menu superior */
+header{
+  position: absolute;
+}
+
+.topnav{
+  background-color: var(--cgrey); 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.topnav a{
+   color: var(--topnavglow);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: var(--topnavglow);
+    color:black;
+}
+
+.topnav a:active{   
+    background-color: var(--cblue);
+}
+
+.active{
+    background-color: var(--cblue);
+}
+
+/*********************************************************************
+                      Estilos generales                
+**********************************************************************/
+
+main{
+    display: block;
+    background-color: var(--cgrey);
+    height: 100%;
+    width: 60%;
+    z-index: 0;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.row{
+  border: 1px solid; 
+  border-color: rgb(59, 115, 187)
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+
+}
+
+p{
+  text-align: left; 
+}
+
+/*********************************************************************
+                      Estilos para columna derecha                 
+**********************************************************************/
+.column2{
+    float:right;
+    width: 65%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.column2 h1{
+    font-size: 400%;
+    color: var(--cgrey);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.column2 h2{
+    margin: 0;
+    font-size: 225%;
+    color: var(--cgrey);
+    text-align: center;
+    margin-bottom: 5%
+}
+
+.column2 h3{
+    font-size:175%;
+    color: white;
+    margin-left: 5%;
+    transform: translateY(-50%);
+    z-index: 0;
+    
+}
+
+.column2 h4{
+    font-size: 135%;
+    color: var(--cgrey);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0.75%;
+}
+
+.column2 h5{
+    font-size: 105%;
+    font-style: italic;
+    color: var(--clgrey);
+    margin: 0 auto;
+    margin-bottom: 0.75%;  
+}
+
+.column2 h6{
+  font-size: 105%;
+  color: var(--cwhite);
+}
+
+
+
+.subtitle-box{
+  max-height: 50px;
+  width: 95%;
+  background-color: var(--cclgrey);
+  float: left;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-right: 100%;
+  margin-bottom: 3%;
+
+}
+
+.description-container,
+.working-container,
+.working-container h4,
+.working-container h5,
+.working-container ul{
+  margin-left: 5%; 
+  margin-right: 5%;
+}
+
+.working-container p{
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--cgrey);
+}
+
+.description-container p{
+  margin-right: 5%;
+  color: var(--cgrey);
+}
+
+.experience-ul li{
+  margin-bottom: 1.25%;
+}
+
+.education-ul{
+  margin-left: 3%;
+}
+
+.education-ul li{
+  margin-top: 5%;
+}
+
+.education-section{
+  margin-bottom: 12%;
+}
+
+
+
+
+/*********************************************************************
+                      Estilos para columna izquierda                 
+**********************************************************************/
+
+.column1{
+    float:left;
+    width: 35%;
+    background-color: VAR(--cgrey);
+}
+
+.profile-container{
+    padding: 12%;
+    margin-bottom: 1%;
+}
+
+.profile-img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid; 
+    color: var(--clgrey);
+    border-radius: 3%;
+}
+
+.aside-container{
+    border: 1px solid;
+    color: var(--cblue);
+}
+
+.checked{
+  color: var(--cblue)
+}
+
+
+/* Estilos para la skill box */
+.skill-container{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background: var(--cwhite);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10%;
+  justify-content: center;
+  border: 1px solid var(--cblue);
+  margin-top: 1%;
+}
+
+.skill-container h3, h4{
+  color: var(--cgrey);
+  text-align: center;
+}
+
+.skill-container .skill-name{
+  text-align: left;
+}
+
+.skill-container .skill-box{
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.skill-box .skill-name{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--cgrey);
+  margin-bottom: 3%;
+}
+
+.skill-box .skill-bar{
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.1);
+}
+
+.skill-bar .skill-per{
+  width: 90%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background: var(--cblue);
+  border-radius: 5px;
+  animation: progress 1s ease-out forwards;
+}
+
+.skill-container .star-bar{
+  margin: auto;
+  text-align: center;
+}
+
+.skill-per.jav{ 
+  width: 95%
+}
+
+.skill-per.c{ 
+  width: 95%
+}
+
+.skill-per.python{ 
+  width: 80%
+}
+
+.skill-per.sql{ 
+  width: 75%
+}
+
+.skill-per.html{
+  width: 60%;
+}
+
+.skill-per.css{ 
+  width: 60%
+}
+
+.skill-per.nodejs{ 
+  width: 50%
+}
+
+
+@keyframes progress{
+  
+  0%{
+    width: 0;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+
+.skill-per .tooltip{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: var(--cblue);
+  z-index: 1;
+
+}
+
+.tooltip::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  background-color: var(--cblue);
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.contact{
+  margin: auto;
+  margin-top: 0;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.contact p, 
+.contact h3{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/*********************************************************************
+                      Estilos para columna formulario                 
+**********************************************************************/
+.cform form{
+  margin-bottom: 10px;
+}
+
+.cform{
+  margin: auto;
+  margin-top: 75px;
+  width: 50%;
+  height: 100%;
+  background: var(--cblue);
+  border: 1px solid var(--clblue);
+}
+
+.wrapper{
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding: 20px;
+}
+
+.content h2{
+  font-size: 250%;
+  margin: auto;
+  text-align: center;  
+  color: var(--cwhite);
+}
+
+.top-form, 
+.mid-form, 
+.bottom-form{
+  padding: 15px 5px;
+  width: 100%;
+  min-height: 65px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.fform label{
+  float: left;
+  margin-bottom: 10px;
+  color: var(--cwhite);
+  font-size: 125%;
+}
+
+.fform{
+  width: 100%;
+  margin: 25px 0;
+}
+
+.fform input[type="text"], 
+.fform input[type="Email"],
+.fform textarea{
+  padding: 15px 5px;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.contact-form .submit-btn{
+  margin-left: 10px;
+	background: var(--clblue);
+	border-style: outset;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  background-color: var(--cblue);
+}
+
+.submit-text{
+  color: white;
+  font: bold 25px;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+.fform input:focus,
+.fform textarea:focus{
+  border-color: var(--clblue);
+  box-shadow: inset 0 1px 1px rgba(82, 82, 82, 0.013),
+              0  0 8px rgba(145, 146, 146, 0.5);
+ }
+
+.fform .label{
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.top-form .inner-form{
+  width: 29.9%;
+  float: left;
+  margin-right: 5%;
+}
+
+.top-form .inner-form:last-child{
+  margin-right: 0;
+}
+
+.mid-form{
+  clear: both;
+}
+
+.bottom-form textarea{
+  height: 120px;
+}
+
+/* Cambios de estilo para pantallas mas pequeñas */
+@media screen and (max-width: 680px){
+  .wrapper{
+    margin: 25px auto 0;
+  }
+
+  .cform{
+    width: 96%;
+  }
+
+  .top-form .inner-form{
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  main{
+    width: 96%;
+  }
+
+  .column2 h1{
+    font-size: 190%;
+  }
+
+  .column2 h2{
+    font-size: 105%;
+  }
+
+  .column2 h3{
+    font-size: 125%;
+  }
+
+  .column2 h4{
+    font-size: 100%;
+  }
+
+  .column2 h5{
+    font-size: 100%;
+  }
+
+  .skill-container{
+    font-size: 75%;
+    justify-content: left;
+    text-align: left;
+    margin: auto;
+  }
+
+  .skill-container .skill-name{
+    font-size: 100%;
+  }
+
+  .tooltip{
+    visibility: hidden;
+  }
+
+  .contact{
+    font-size: 85%;
+  }
+
+}
+
+footer{
+height: auto;
+width: 60%;
+background-color: var(--clgrey);
+margin: auto;
+align-items: center; 
+text-align: center;
+font-size: 75%;
+}
